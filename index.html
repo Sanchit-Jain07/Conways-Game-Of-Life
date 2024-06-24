@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conway's Game of Life</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Conway's Game of Life</h1>
+        </div>
+        <div class="controls">
+            <button id="playButton" class="button-3">Play</button>
+            <button id="pauseButton" class="button-3">Pause</button>
+            <button id="clearButton" class="button-3">Clear</button>
+            <button id="nextButton" class="button-3">Next</button>
+            <button id="previousButton" class="button-3">Previous</button>
+            <div class="control-group">
+                <label for="speedControl">Speed</label>
+                <input type="range" id="speedControl" class="slider" min="1" max="50" step="1" value="5">
+            </div>
+            <div class="control-group">
+                <select name="presets" id="presets">
+                    <option value="glider">Glider</option>
+                    <option value="pulsar">Pulsar</option>
+                    <option value="lightweight spaceship">Lightweight Spaceship</option>
+                    <option value="beacon">Beacon</option>
+                    <option value="blinker">Blinker</option>
+                    <option value="toad">Toad</option>
+                    <option value="penta-decathlon">Penta-decathlon</option>
+                    <option value="block">Block</option>
+                    <option value="loaf">Loaf</option>
+                    <option value="boat">Boat</option>
+                    <option value="tub">Tub</option>
+                    <option value="random">Random</option>
+                </select>
+                <button id="presetButton" class="button-3">Add</button>
+            </div>
+        </div>
+        <div class="canvas">
+            <canvas id="gameCanvas"></canvas>
+        </div>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
